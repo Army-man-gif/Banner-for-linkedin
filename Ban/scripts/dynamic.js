@@ -1,1 +1,1 @@
-overallBox = document.getElementsByClassName("containerBox")
+const overallBox = document.getElementsByClassName("containerBox")
