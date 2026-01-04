@@ -8,3 +8,10 @@ html, body {
     width: 800px; 
     height: 500px; 
 }
+
+background: linear-gradient(
+  135deg,
+  #0f2027,
+  #1f3b4d,
+  #d4af37
+);
