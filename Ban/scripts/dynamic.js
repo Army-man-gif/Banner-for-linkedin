@@ -41,7 +41,7 @@ while (!reachedEnd){
     whiteKey.style.left = `${xPos}%`
     whiteKey.style.backgroundColor = "black";
     fragment.appendChild(whiteKey)
-
+    // document.body.style.background = "linear-gradient(135deg, #0f2027, #1f3b4d, #d4af37)";
     const blackKeyWidth = 0.3 * incrementation;
     const blackKeyLeft = xPos + 0.85 * incrementation;
 
@@ -52,7 +52,11 @@ while (!reachedEnd){
         blackKey.style.height = "22%";
         blackKey.style.top = `${distanceFromTop}%`;
         blackKey.style.left = `${blackKeyLeft}%`;
-        blackKey.style.backgroundColor = "black";
+        if (patternIndex % 2 == 0) {
+            blackKey.style.background = "linear-gradient(135deg, #0f2027, #1f3b4d, #d4af37)"
+        }else{
+            blackKey.style.backgroundColor = "black";
+        }
         fragment.appendChild(blackKey);
     }
     patternIndex = (patternIndex + 1) % blackKeyPattern.length;
